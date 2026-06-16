@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pengumpulan Informasi Pribadi</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+        /* 重置样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部样式 */
+        .header {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        .nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* 主要内容样式 */
+        .main {
+            padding: 2rem 0;
+        }
+
+        .content {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 34px;
+            font-weight: 600;
+            color: black;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            text-align:center;
+        }
+
+        .update-date {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            text-align:center;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: black;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+        .weight-bold {
+            color:black;
+            font-weight: 600;
+        }
+        .link {
+            color:blue;
+            text-decoration: none;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+                margin: 0 1rem;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .section p {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .content {
+                padding: 1.5rem 1rem;
+                margin: 0 0.5rem;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .section h2 {
+                font-size: 18px;
+            }
+
+            .section h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Daftar Pengumpulan Informasi Pribadi</h1>
+                <p class="update-date"></p>
+                <div class="section">
+                    <p><span class="weight-bold">ThunderSoft</span> (selanjutnya disebut kami) akan secara ketat mematuhi persyaratan hukum dan peraturan negara, mengintegrasikan legalitas dan kepatuhan ke dalam desain produk dan proses bisnis, serta menggunakan teknologi keamanan canggih di industri untuk menjamin keamanan data. Pada saat yang sama, kami sangat memperhatikan perlindungan informasi pribadi dan privasi Anda, berdedikasi untuk mempertahankan hak privasi setiap orang, untuk itu kami berpegang pada 5 prinsip dasar perlindungan privasi:
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Minimalisasi data: Bersikeras hanya mengumpulkan data pribadi yang diperlukan untuk mewujudkan fungsi bisnis, demi melayani kebutuhan Anda.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Pemrosesan di sisi perangkat: Bersikeras menyelesaikan pemrosesan dan analisis data pribadi pada perangkat pengguna semaksimal mungkin.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Transparan dan terkendali: Saat mengumpulkan data pribadi, beri tahu pengguna dengan jelas dan tegas, serta pastikan pengguna mengetahui bagaimana data digunakan, dan bagaimana cara keluar.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Perlindungan identitas: Menggunakan teknologi peningkatan privasi, menyembunyikan identitas pengguna saat data meninggalkan perangkat pengguna.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Skenario Bisnis</th>
+                                <th>Tujuan Pengumpulan</th>
+                                <th>Jenis Informasi Pribadi</th>
+                                <th>Cara Pengumpulan</th>
+                                <th>Bidang Informasi Pribadi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Penemuan dan Koneksi Perangkat</th>
+                                <td>Agar perangkat Anda dapat saling terhubung, kami dapat mengumpulkan pengidentifikasi unik perangkat Anda, jenis perangkat, model perangkat, nama perangkat, alamat Bluetooth, alamat Wi-Fi, SSID Wi-Fi, serta alamat IP untuk menemukan perangkat di sekitar Anda yang tersedia untuk dipasangkan dan dihubungkan, membangun tautan komunikasi antar perangkat, guna mewujudkan aliran konten dan kolaborasi fungsi antar perangkat untuk Anda.</th>
+                                <td>Informasi Perangkat</th>
+                                <td>Pengumpulan oleh sistem</th>
+                                <td>Pengidentifikasi unik perangkat, jenis perangkat, model perangkat, nama perangkat, alamat Bluetooth, alamat Wi-Fi, SSID Wi-Fi, serta alamat IP</th>
+                            </tr>
+                            <tr>
+                                <td>Transfer File Bersama</th>
+                                <td>Untuk menyediakan "Transfer File Bersama" bagi Anda, melalui fungsi ini Anda dapat mewujudkan transfer dan aliran file antar perangkat. Untuk itu kami akan mengumpulkan pengidentifikasi perangkat Anda (ID perangkat), nama perangkat, jenis perangkat, informasi file (nama file serta konten file), informasi kontak yang terkandung dalam file (termasuk nama, ulang tahun, nomor telepon pribadi, alamat email, alamat, jabatan serta tempat kerja), nama Wi-Fi, dan lain-lain.</th>
+                                <td>Informasi Perangkat, Informasi File, Informasi Kontak</th>
+                                <td>Pengumpulan oleh sistem</th>
+                                <td>Pengidentifikasi perangkat (ID perangkat), nama perangkat, jenis perangkat, informasi file (nama file serta konten file), informasi kontak yang terkandung dalam file (termasuk nama, ulang tahun, nomor telepon pribadi, alamat email, alamat, jabatan serta tempat kerja), nama Wi-Fi</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

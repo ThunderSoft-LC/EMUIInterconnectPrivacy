@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보 수집 목록</title>
+    <style>
+        table { border-collapse: collapse; margin: 20px auto; font-family: Arial, sans-serif; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: top; }
+        th { font-weight: bold; text-align: center; background-color: #f5f5f5; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .main { padding: 2rem 0; }
+        .content { background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 2px 20px rgba(0,0,0,0.1); max-width: 1000px; margin: 0 auto; }
+        h1 { font-size: 34px; font-weight: 600; color: black; margin-bottom: 0.5rem; line-height: 1.3; text-align: center; }
+        .update-date { color: #666; font-size: 14px; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee; text-align: center; }
+        .section { margin-bottom: 2rem; }
+        .section p { margin-bottom: 1rem; text-align: justify; color: #555; font-size: 16px; line-height: 1.8; }
+        .weight-bold { color: black; font-weight: 600; }
+        @media (max-width: 768px) { .content { padding: 2rem 1.5rem; margin: 0 1rem; } h1 { font-size: 24px; } .section p { font-size: 15px; } }
+        @media (max-width: 600px) { table { display: block; overflow-x: auto; white-space: nowrap; } th, td { min-width: 120px; } }
+        @media (max-width: 480px) { .container { padding: 0 15px; } .content { padding: 1.5rem 1rem; margin: 0 0.5rem; } h1 { font-size: 22px; } }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>개인정보 수집 목록</h1>
+                <div class="section">
+                    <p><span class="weight-bold">ThunderSoft</span>(이하 “당사”)는 국가의 법률 및 규정 요구사항을 엄격히 준수하며, 적법성과 규정 준수를 제품 설계 및 업무 프로세스에 통합하고, 업계의 첨단 보안 기술을 채택하여 데이터 안전을 보장합니다. 동시에 당사는 귀하의 개인정보 및 프라이버시 보호를 매우 중요하게 생각하며, 모든 사람의 프라이버시 권리를 지키기 위해 노력합니다. 이를 위해 당사는 프라이버시 보호 5대 기본 원칙을 준수합니다:
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;데이터 최소화: 업무 기능 구현에 필요한 개인 데이터만 수집하여 귀하의 요구를 충족시킵니다.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;단말 측 처리: 가능한 한 사용자의 기기에서 개인 데이터의 처리 및 분석을 완료합니다.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;투명성 및 통제 가능성: 개인 데이터 수집 시 사용자에게 명확하고 정확하게 알리며, 사용자가 데이터가 어떻게 사용되는지, 그리고 어떻게 철회할 수 있는지 알 수 있도록 합니다.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;신원 보호: 프라이버시 강화 기술을 사용하여 데이터가 사용자의 기기를 떠날 때 사용자의 신원을 숨깁니다.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+                        <thead>
+                            <tr><th>업무 시나리오</th><th>수집 목적</th><th>개인정보 유형</th><th>수집 방식</th><th>개인정보 필드</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>기기 발견 및 연결</td><td>귀하의 기기 간 상호 연결을 실현하기 위해, 당사는 귀하의 기기 고유 식별자, 기기 유형, 기기 모델, 기기 이름, 블루투스 주소, Wi-Fi 주소, Wi-Fi SSID 및 IP 주소를 수집하여 귀하 주변에서 페어링 및 연결 가능한 기기를 발견하고, 기기 간 통신 링크를 구축하여 귀하에게 기기 간 콘텐츠 흐름 및 기능 협력을 실현할 수 있습니다.</td><td>기기 정보</td><td>시스템 수집</td><td>기기 고유 식별자, 기기 유형, 기기 모델, 기기 이름, 블루투스 주소, Wi-Fi 주소, Wi-Fi SSID 및 IP 주소</td></tr>
+                            <tr><td>파일 상호 전송</td><td>귀하에게 “파일 상호 전송”을 제공하기 위해, 이 기능을 통해 귀하는 파일의 기기 간 전송 및 흐름을 실현할 수 있습니다. 이를 위해 당사는 귀하의 기기 식별자(기기 ID), 기기 이름, 기기 유형, 파일 정보(파일 이름 및 파일 내용), 파일에 포함된 연락처 정보(이름, 생년월일, 개인 전화번호, 이메일 주소, 주소, 직위 및 근무처 포함), Wi-Fi 이름 등을 수집합니다.</td><td>기기 정보, 파일 정보, 연락처 정보</td><td>시스템 수집</td><td>기기 식별자(기기 ID), 기기 이름, 기기 유형, 파일 정보(파일 이름 및 파일 내용), 파일에 포함된 연락처 정보(이름, 생년월일, 개인 전화번호, 이메일 주소, 주소, 직위 및 근무처 포함), Wi-Fi 이름</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

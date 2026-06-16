@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista prikupljenih ličnih podataka</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+        .nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+        .nav a:hover {
+            opacity: 0.8;
+        }
+        .main {
+            padding: 2rem 0;
+        }
+        .content {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 34px;
+            font-weight: 600;
+            color: black;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            text-align: center;
+        }
+        .update-date {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+        .section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: black;
+            margin: 1.5rem 0 1rem 0;
+        }
+        .section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+        .weight-bold {
+            color: black;
+            font-weight: 600;
+        }
+        .link {
+            color: blue;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .header .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            .content {
+                padding: 2rem 1.5rem;
+                margin: 0 1rem;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .section h2 {
+                font-size: 20px;
+            }
+            .section p {
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            .content {
+                padding: 1.5rem 1rem;
+                margin: 0 0.5rem;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            .section h2 {
+                font-size: 18px;
+            }
+            .section h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Lista prikupljenih ličnih podataka</h1>
+                <p class="update-date"></p>
+                <div class="section">
+                    <p><span class="weight-bold">ThunderSoft (Thunder Software Technology Co., Ltd.)</span> (u daljem tekstu „mi“) će strogo poštovati zahteve državnih zakona i propisa, ugraditi zakonitost i usaglašenost u dizajn proizvoda i poslovne procese, i koristiti napredne bezbednosne tehnologije u industriji kako bi osigurala bezbednost podataka. Istovremeno, veoma ozbiljno shvatamo zaštitu vaših ličnih podataka i privatnosti i posvećeni smo odbrani prava svakog pojedinca na privatnost. Zbog toga se držimo 5 osnovnih principa zaštite privatnosti:
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Minimizacija podataka: Insistiramo na prikupljanju samo onih ličnih podataka koji su neophodni za obavljanje poslovnih funkcija, kako bismo služili vašim potrebama.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Obrada na strani uređaja: Insistiramo na obradi i analizi ličnih podataka na korisnikovom uređaju kad god je to moguće.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Transparentnost i kontrolabilnost: Kada prikupljamo lične podatke, jasno i nedvosmisleno obaveštavamo korisnika i osiguravamo da korisnik zna kako se podaci koriste i kako da se odjavi.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Zaštita identiteta: Koristimo tehnologije za poboljšanje privatnosti kako bismo sakrili identitet korisnika kada podaci napuste njegov uređaj.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+                        <tr>
+                            <th>Poslovni scenario</th>
+                            <th>Svrha prikupljanja</th>
+                            <th>Vrsta ličnih podataka</th>
+                            <th>Način prikupljanja</th>
+                            <th>Polja ličnih podataka</th>
+                        </tr>
+                        <tr>
+                            <td>Otkrivanje uređaja i povezivanje</td>
+                            <td>Kako bismo omogućili međusobnu povezanost vaših uređaja, možemo prikupljati jedinstveni identifikator vašeg uređaja, vrstu uređaja, model uređaja, ime uređaja, Bluetooth adresu, Wi-Fi adresu, Wi-Fi SSID i IP adresu kako bismo otkrili uređaje u vašoj blizini koji su dostupni za uparivanje i povezivanje, uspostavili komunikacionu vezu između uređaja i omogućili vam prenos sadržaja i koordinaciju funkcija između uređaja.</td>
+                            <td>Informacije o uređaju</td>
+                            <td>Sistemsko prikupljanje</td>
+                            <td>Jedinstveni identifikator uređaja, vrsta uređaja, model uređaja, ime uređaja, Bluetooth adresa, Wi-Fi adresa, Wi-Fi SSID i IP adresa</td>
+                        </tr>
+                        <tr>
+                            <td>Prenos datoteka između uređaja</td>
+                            <td>Da bismo vam pružili „Prenos datoteka između uređaja“, putem kojeg možete vršiti međuuređajni prenos datoteka. U tu svrhu prikupićemo identifikator vašeg uređaja (ID uređaja), ime uređaja, vrstu uređaja, informacije o datoteci (ime datoteke i sadržaj datoteke), kontaktne podatke sadržane u datoteci (uključujući ime, datum rođenja, lični broj telefona, e-mail adresu, adresu, poziciju i radno mesto), ime Wi-Fi-a itd.</td>
+                            <td>Informacije o uređaju, informacije o datotekama, kontaktne informacije</td>
+                            <td>Sistemsko prikupljanje</td>
+                            <td>Identifikator uređaja (ID uređaja), ime uređaja, vrsta uređaja, informacije o datoteci (ime datoteke i sadržaj datoteke), kontaktni podaci sadržani u datoteci (uključujući ime, datum rođenja, lični broj telefona, e-mail adresu, adresu, poziciju i radno mesto), ime Wi-Fi-a</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

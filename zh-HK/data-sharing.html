@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人資訊共享清單</title>
+	<style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+			text-align: center;
+			word-break: break-all;
+			white-space: normal;
+        }
+		/* 重置樣式 */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* 頭部樣式 */
+		.header {
+			background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+			color: white;
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.header .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo-img {
+			height: 40px;
+			width: auto;
+		}
+
+		.nav ul {
+			display: flex;
+			list-style: none;
+			gap: 2rem;
+		}
+
+		.nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: opacity 0.3s;
+		}
+
+		.nav a:hover {
+			opacity: 0.8;
+		}
+
+		/* 主要內容樣式 */
+		.main {
+			padding: 2rem 0;
+		}
+
+		.content {
+			background: white;
+			padding: 3rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 34px;
+			font-weight: 600;
+			color: black;
+			margin-bottom: 0.5rem;
+			line-height: 1.3;
+			text-align:center;
+		}
+
+		.update-date {
+			color: #666;
+			font-size: 14px;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #eee;
+			text-align:center;
+		}
+
+		.section {
+			margin-bottom: 2rem;
+		}
+
+		.section h2 {
+			font-size: 22px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.section h3 {
+			font-size: 18px;
+			font-weight: 600;
+			color: black;
+			margin: 1.5rem 0 1rem 0;
+		}
+
+		.section p {
+			margin-bottom: 1rem;
+			text-align: justify;
+			color: #555;
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		.section p:last-child {
+			margin-bottom: 0;
+		}
+		.weight-bold
+		{
+			color:black;
+			font-weight: 600;
+		}
+		.link
+		{
+			color:blue;
+			text-decoration: none;
+		}
+
+		/* 響應式設計 */
+		@media (max-width: 768px) {
+			.header .container {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.nav ul {
+				flex-direction: column;
+				gap: 1rem;
+				text-align: center;
+			}
+
+			.content {
+				padding: 2rem 1.5rem;
+				margin: 0 1rem;
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+
+			.section h2 {
+				font-size: 20px;
+			}
+
+			.section p {
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.container {
+				padding: 0 15px;
+			}
+
+			.content {
+				padding: 1.5rem 1rem;
+				margin: 0 0.5rem;
+			}
+
+			h1 {
+				font-size: 22px;
+			}
+
+			.section h2 {
+				font-size: 18px;
+			}
+
+			.section h3 {
+				font-size: 16px;
+			}
+			/* 基礎表格樣式 */
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 20px auto;
+				font-family: Arial, sans-serif;
+			}
+
+			/* 儲存格樣式 */
+			th, td {
+				border: 1px solid #ddd;
+				padding: 12px;
+				text-align: left;
+			}
+
+			/* 表頭樣式 */
+			th {
+				font-weight: bold;
+				text-align: center;
+				background-color: #f5f5f5;
+			}
+
+			/* 連結樣式 */
+			.link {
+				display: block;
+				word-break: break-all;
+				white-space: normal;
+				margin: 4px 0;
+			}
+						/* 響應式處理 */
+			@media (max-width: 600px) {
+				table {
+					display: block;
+					overflow-x: auto;
+					white-space: nowrap;
+				}
+				
+				th, td {
+					min-width: 120px;
+				}
+				
+				.link {
+					word-break: break-word;
+				}
+			}
+		}
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>個人資訊共享清單</h1>
+				<p class="update-date"></p>
+				<div class="section">
+                    <p>為了向您提供部分服務，我們需要將您的個人資訊提供給第三方。為了保障您的資料安全與隱私，我們與合作夥伴簽訂了資料安全保護協議，明確了合作夥伴對您的資料的保護責任、義務和要求。詳情請查閱以下<span class="weight-bold">第三方共享資訊清單</span>。
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+						<tbody>
+							<th>第三方名稱</th>
+							<th>處理目的和方式</th>
+							<th>涉及個人資訊種類</th>
+							<th>第三方官網連結和隱私聲明連結</th>
+							<tr>
+								<td>無</td>
+								<td>無</td>
+								<td>無</td>
+								<td>無</td>
+							</tr>
+						</tbody>
+					</table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

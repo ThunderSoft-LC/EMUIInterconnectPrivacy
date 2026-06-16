@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সংগৃহীত ব্যক্তিগত তথ্যের তালিকা</title>
+	<style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+			text-align: center;
+        }
+		/* স্টাইল রিসেট */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* হেডার স্টাইল */
+		.header {
+			background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+			color: white;
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.header .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo-img {
+			height: 40px;
+			width: auto;
+		}
+
+		.nav ul {
+			display: flex;
+			list-style: none;
+			gap: 2rem;
+		}
+
+		.nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: opacity 0.3s;
+		}
+
+		.nav a:hover {
+			opacity: 0.8;
+		}
+
+		/* প্রধান কন্টেন্ট স্টাইল */
+		.main {
+			padding: 2rem 0;
+		}
+
+		.content {
+			background: white;
+			padding: 3rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 34px;
+			font-weight: 600;
+			color: black;
+			margin-bottom: 0.5rem;
+			line-height: 1.3;
+			text-align:center;
+		}
+
+		.update-date {
+			color: #666;
+			font-size: 14px;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #eee;
+			text-align:center;
+		}
+
+		.section {
+			margin-bottom: 2rem;
+		}
+
+		.section h2 {
+			font-size: 22px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.section h3 {
+			font-size: 18px;
+			font-weight: 600;
+			color: black;
+			margin: 1.5rem 0 1rem 0;
+		}
+
+		.section p {
+			margin-bottom: 1rem;
+			text-align: justify;
+			color: #555;
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		.section p:last-child {
+			margin-bottom: 0;
+		}
+		.weight-bold
+		{
+			color:black;
+			font-weight: 600;
+		}
+		.link
+		{
+			color:blue;
+			text-decoration: none;
+		}
+
+		/* প্রতিক্রিয়াশীল নকশা */
+		@media (max-width: 768px) {
+			.header .container {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.nav ul {
+				flex-direction: column;
+				gap: 1rem;
+				text-align: center;
+			}
+
+			.content {
+				padding: 2rem 1.5rem;
+				margin: 0 1rem;
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+
+			.section h2 {
+				font-size: 20px;
+			}
+
+			.section p {
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.container {
+				padding: 0 15px;
+			}
+
+			.content {
+				padding: 1.5rem 1rem;
+				margin: 0 0.5rem;
+			}
+
+			h1 {
+				font-size: 22px;
+			}
+
+			.section h2 {
+				font-size: 18px;
+			}
+
+			.section h3 {
+				font-size: 16px;
+			}
+		}
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>সংগৃহীত ব্যক্তিগত তথ্যের তালিকা</h1>
+				<p class="update-date"></p>
+				<div class="section">
+                    <p><span class="weight-bold">থান্ডারসফ্ট</span> (এরপরে "আমরা" হিসাবে উল্লেখিত) দেশের আইন ও নিয়মাবলীর প্রয়োজনীয়তাগুলি কঠোরভাবে মেনে চলবে, বৈধতা ও নিয়মনীতি পণ্য নকশা এবং ব্যবসায়িক প্রক্রিয়ায় একীভূত করবে, এবং তথ্য সুরক্ষা নিশ্চিত করতে শিল্পের উন্নত নিরাপত্তা প্রযুক্তি ব্যবহার করবে। একই সময়ে আমরা আপনার ব্যক্তিগত তথ্য এবং গোপনীয়তা সুরক্ষাকে অত্যন্ত গুরুত্ব দেই, প্রতিটি ব্যক্তির গোপনীয়তা অধিকার রক্ষায় নিবেদিত, এই লক্ষ্যে আমরা গোপনীয়তা সুরক্ষার ৫টি মৌলিক নীতি মেনে চলি:
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;তথ্য ন্যূনতমকরণ: শুধুমাত্র ব্যবসায়িক কার্যকারিতা বাস্তবায়নের জন্য প্রয়োজনীয় ব্যক্তিগত তথ্য সংগ্রহ করার উপর জোর দেওয়া, যাতে আপনার চাহিদা পূরণ করা যায়।
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;তথ্যের ডিভাইস-পার্শ্ব প্রক্রিয়াকরণ: যতটা সম্ভব ব্যবহারকারীর ডিভাইসে ব্যক্তিগত তথ্যের প্রক্রিয়াকরণ ও বিশ্লেষণ সম্পন্ন করার উপর জোর দেওয়া।
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;স্বচ্ছ ও নিয়ন্ত্রণযোগ্য: ব্যক্তিগত তথ্য সংগ্রহের সময়, ব্যবহারকারীকে স্পষ্ট ও নির্দিষ্টভাবে জানানো, এবং নিশ্চিত করা যে ব্যবহারকারী জানে কিভাবে তথ্য ব্যবহার করা হয় এবং কিভাবে প্রস্থান করতে হয়।
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;পরিচয় সুরক্ষা: গোপনীয়তা বৃদ্ধিকারী প্রযুক্তি ব্যবহার করে, তথ্য ব্যবহারকারীর ডিভাইস ছেড়ে যাওয়ার সময়, ব্যবহারকারীর পরিচয় গোপন করা।
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+						<tbody>
+							<th>ব্যবসায়িক দৃশ্যকল্প</th>
+							<th>সংগ্রহের উদ্দেশ্য</th>
+							<th>ব্যক্তিগত তথ্যের ধরন</th>
+							<th>সংগ্রহের পদ্ধতি</th>
+							<th>ব্যক্তিগত তথ্যের ক্ষেত্র</th>
+							<tr>
+								<td>ডিভাইস আবিষ্কার ও সংযোগ</th>
+								<td>আপনার ডিভাইসগুলির মধ্যে আন্তঃসংযোগ সক্ষম করতে, আমরা আপনার ডিভাইসের অনন্য শনাক্তকারী, ডিভাইসের ধরন, ডিভাইস মডেল, ডিভাইসের নাম, ব্লুটুথ ঠিকানা, Wi-Fi ঠিকানা, Wi-Fi SSID এবং আইপি ঠিকানা সংগ্রহ করতে পারি আপনার চারপাশে পেয়ারিং ও সংযোগের জন্য উপলব্ধ ডিভাইসগুলি আবিষ্কার করতে, ডিভাইসগুলির মধ্যে যোগাযোগ লিঙ্ক স্থাপন করতে, এবং আপনার জন্য ডিভাইসগুলির মধ্যে বিষয়বস্তুর প্রবাহ ও কার্যকারিতার সমন্বয় বাস্তবায়ন করতে।</th>
+								<td>ডিভাইস তথ্য</th>
+								<td>সিস্টেম সংগ্রহ</th>
+								<td>ডিভাইসের অনন্য শনাক্তকারী, ডিভাইসের ধরন, ডিভাইস মডেল, ডিভাইসের নাম, ব্লুটুথ ঠিকানা, Wi-Fi ঠিকানা, Wi-Fi SSID এবং আইপি ঠিকানা</th>
+							</tr>
+							<tr>
+								<td>ফাইল স্থানান্তর</th>
+								<td>আপনাকে "ফাইল স্থানান্তর" প্রদান করতে, এই ফাংশনের মাধ্যমে আপনি ফাইলগুলির ক্রস-ডিভাইস স্থানান্তর ও প্রবাহ উপলব্ধি করতে পারেন। এই লক্ষ্যে আমরা আপনার ডিভাইস শনাক্তকারী (ডিভাইস আইডি), ডিভাইসের নাম, ডিভাইসের ধরন, ফাইল তথ্য (ফাইলের নাম ও ফাইলের বিষয়বস্তু), ফাইলে থাকা যোগাযোগের তথ্য (নাম, জন্মদিন, ব্যক্তিগত ফোন নম্বর, ইমেইল ঠিকানা, ঠিকানা, পদবি ও কর্মস্থল সহ), Wi-Fi নাম ইত্যাদি সংগ্রহ করব।</th>
+								<td>ডিভাইস তথ্য, ফাইল তথ্য, যোগাযোগের তথ্য</th>
+								<td>সিস্টেম সংগ্রহ</th>
+								<td>ডিভাইস শনাক্তকারী (ডিভাইস আইডি), ডিভাইসের নাম, ডিভাইসের ধরন, ফাইল তথ্য (ফাইলের নাম ও ফাইলের বিষয়বস্তু), ফাইলে থাকা যোগাযোগের তথ্য (নাম, জন্মদিন, ব্যক্তিগত ফোন নম্বর, ইমেইল ঠিকানা, ঠিকানা, পদবি ও কর্মস্থল সহ), Wi-Fi নাম</th>
+							</tr>
+						</tbody>
+					</table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

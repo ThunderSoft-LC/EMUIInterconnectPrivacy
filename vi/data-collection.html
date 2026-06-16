@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách thu thập thông tin cá nhân</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+        .nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+        .nav a:hover {
+            opacity: 0.8;
+        }
+        .main {
+            padding: 2rem 0;
+        }
+        .content {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 34px;
+            font-weight: 600;
+            color: black;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            text-align: center;
+        }
+        .update-date {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+        .section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: black;
+            margin: 1.5rem 0 1rem 0;
+        }
+        .section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+        .weight-bold {
+            color: black;
+            font-weight: 600;
+        }
+        .link {
+            color: blue;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .header .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            .content {
+                padding: 2rem 1.5rem;
+                margin: 0 1rem;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .section h2 {
+                font-size: 20px;
+            }
+            .section p {
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            .content {
+                padding: 1.5rem 1rem;
+                margin: 0 0.5rem;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            .section h2 {
+                font-size: 18px;
+            }
+            .section h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Danh sách thu thập thông tin cá nhân</h1>
+                <p class="update-date"></p>
+                <div class="section">
+                    <p><span class="weight-bold">ThunderSoft (Công ty TNHH Công nghệ Phần mềm Thunder)</span> (sau đây gọi là “chúng tôi”) sẽ tuân thủ nghiêm ngặt các yêu cầu của pháp luật và quy định quốc gia, lồng ghép tính hợp pháp và tuân thủ vào thiết kế sản phẩm và quy trình kinh doanh, đồng thời sử dụng công nghệ bảo mật tiên tiến trong ngành để đảm bảo an toàn dữ liệu. Đồng thời, chúng tôi rất coi trọng việc bảo vệ thông tin cá nhân và quyền riêng tư của bạn, cam kết bảo vệ quyền riêng tư của mỗi cá nhân. Vì vậy, chúng tôi tuân thủ 5 nguyên tắc cơ bản về bảo vệ quyền riêng tư:
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Tối thiểu hóa dữ liệu: Chỉ thu thập dữ liệu cá nhân cần thiết để thực hiện các chức năng kinh doanh nhằm phục vụ nhu cầu của bạn.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Xử lý phía thiết bị: Cố gắng xử lý và phân tích dữ liệu cá nhân trên thiết bị của người dùng.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Minh bạch và kiểm soát được: Khi thu thập dữ liệu cá nhân, thông báo rõ ràng, minh bạch cho người dùng và đảm bảo người dùng biết dữ liệu được sử dụng như thế nào và cách thoát khỏi dịch vụ.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Bảo vệ danh tính: Sử dụng công nghệ tăng cường quyền riêng tư để che giấu danh tính của người dùng khi dữ liệu rời khỏi thiết bị của người dùng.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Kịch bản kinh doanh</th>
+                                <th>Mục đích thu thập</th>
+                                <th>Loại thông tin cá nhân</th>
+                                <th>Phương thức thu thập</th>
+                                <th>Trường thông tin cá nhân</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Phát hiện và kết nối thiết bị</td>
+                                <td>Để cho phép kết nối giữa các thiết bị của bạn, chúng tôi có thể thu thập số nhận dạng duy nhất của thiết bị, loại thiết bị, kiểu thiết bị, tên thiết bị, địa chỉ Bluetooth, địa chỉ Wi-Fi, Wi-Fi SSID và địa chỉ IP của bạn để phát hiện các thiết bị xung quanh có sẵn để ghép nối và kết nối, thiết lập liên kết giao tiếp giữa các thiết bị, giúp bạn luân chuyển nội dung và phối hợp chức năng giữa các thiết bị.</td>
+                                <td>Thông tin thiết bị</td>
+                                <td>Thu thập hệ thống</td>
+                                <td>Số nhận dạng duy nhất của thiết bị, loại thiết bị, kiểu thiết bị, tên thiết bị, địa chỉ Bluetooth, địa chỉ Wi-Fi, Wi-Fi SSID và địa chỉ IP</td>
+                            </tr>
+                            <tr>
+                                <td>Truyền tệp giữa các thiết bị</td>
+                                <td>Để cung cấp cho bạn “Truyền tệp giữa các thiết bị”, qua chức năng này bạn có thể thực hiện truyền tệp xuyên thiết bị. Vì vậy, chúng tôi sẽ thu thập số nhận dạng thiết bị (ID thiết bị), tên thiết bị, loại thiết bị, thông tin tệp (tên tệp và nội dung tệp), thông tin liên hệ có trong tệp (bao gồm tên, ngày sinh, số điện thoại cá nhân, địa chỉ email, địa chỉ, chức vụ và nơi làm việc), tên Wi-Fi, v.v.</td>
+                                <td>Thông tin thiết bị, thông tin tệp, thông tin liên hệ</td>
+                                <td>Thu thập hệ thống</td>
+                                <td>Số nhận dạng thiết bị (ID thiết bị), tên thiết bị, loại thiết bị, thông tin tệp (tên tệp và nội dung tệp), thông tin liên hệ có trong tệp (bao gồm tên, ngày sinh, số điện thoại cá nhân, địa chỉ email, địa chỉ, chức vụ và nơi làm việc), tên Wi-Fi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des informations personnelles collectées</title>
+	<style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+			text-align: center;
+        }
+		/* Réinitialisation des styles */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* Styles d'en-tête */
+		.header {
+			background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+			color: white;
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.header .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo-img {
+			height: 40px;
+			width: auto;
+		}
+
+		.nav ul {
+			display: flex;
+			list-style: none;
+			gap: 2rem;
+		}
+
+		.nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: opacity 0.3s;
+		}
+
+		.nav a:hover {
+			opacity: 0.8;
+		}
+
+		/* Styles du contenu principal */
+		.main {
+			padding: 2rem 0;
+		}
+
+		.content {
+			background: white;
+			padding: 3rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 34px;
+			font-weight: 600;
+			color: black;
+			margin-bottom: 0.5rem;
+			line-height: 1.3;
+			text-align:center;
+		}
+
+		.update-date {
+			color: #666;
+			font-size: 14px;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #eee;
+			text-align:center;
+		}
+
+		.section {
+			margin-bottom: 2rem;
+		}
+
+		.section h2 {
+			font-size: 22px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.section h3 {
+			font-size: 18px;
+			font-weight: 600;
+			color: black;
+			margin: 1.5rem 0 1rem 0;
+		}
+
+		.section p {
+			margin-bottom: 1rem;
+			text-align: justify;
+			color: #555;
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		.section p:last-child {
+			margin-bottom: 0;
+		}
+		.weight-bold
+		{
+			color:black;
+			font-weight: 600;
+		}
+		.link
+		{
+			color:blue;
+			text-decoration: none;
+		}
+
+		/* Conception responsive */
+		@media (max-width: 768px) {
+			.header .container {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.nav ul {
+				flex-direction: column;
+				gap: 1rem;
+				text-align: center;
+			}
+
+			.content {
+				padding: 2rem 1.5rem;
+				margin: 0 1rem;
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+
+			.section h2 {
+				font-size: 20px;
+			}
+
+			.section p {
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.container {
+				padding: 0 15px;
+			}
+
+			.content {
+				padding: 1.5rem 1rem;
+				margin: 0 0.5rem;
+			}
+
+			h1 {
+				font-size: 22px;
+			}
+
+			.section h2 {
+				font-size: 18px;
+			}
+
+			.section h3 {
+				font-size: 16px;
+			}
+		}
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Liste des informations personnelles collectées</h1>
+				<p class="update-date"></p>
+				<div class="section">
+                    <p><span class="weight-bold">ThunderSoft</span> (ci-après dénommé "nous") respecte strictement les exigences des lois et règlements nationaux, intègre la conformité légale dans la conception des produits et les processus commerciaux, et utilise des technologies de sécurité avancées de l'industrie pour garantir la sécurité des données. En même temps, nous accordons une grande importance à la protection de vos informations personnelles et de votre vie privée, et nous nous engageons à défendre les droits à la vie privée de chacun. C'est pourquoi nous adhérons aux 5 principes fondamentaux de la protection de la vie privée :
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Minimisation des données : Nous nous engageons à ne collecter que les données personnelles nécessaires à la réalisation des fonctions commerciales, afin de répondre à vos besoins.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Traitement des données sur l'appareil : Nous nous engageons à effectuer le traitement et l'analyse des données personnelles sur l'appareil de l'utilisateur autant que possible.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Transparence et contrôlabilité : Lors de la collecte de données personnelles, nous informons l'utilisateur de manière claire et précise, et nous nous assurons que l'utilisateur sait comment les données sont utilisées et comment se désinscrire.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Protection de l'identité : Nous utilisons des technologies d'amélioration de la confidentialité pour masquer l'identité de l'utilisateur lorsque les données quittent l'appareil de l'utilisateur.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+						<tbody>
+							<th>Scénario commercial</th>
+							<th>Objectif de la collecte</th>
+							<th>Type d'informations personnelles</th>
+							<th>Mode de collecte</th>
+							<th>Champs d'informations personnelles</th>
+							<tr>
+								<td>Découverte et connexion d'appareils</th>
+								<td>Pour permettre l'interconnexion entre vos appareils, nous pouvons collecter votre identifiant unique d'appareil, le type d'appareil, le modèle d'appareil, le nom d'appareil, l'adresse Bluetooth, l'adresse Wi-Fi, le SSID Wi-Fi ainsi que l'adresse IP afin de découvrir les appareils disponibles autour de vous pour l'appairage et la connexion, d'établir des liens de communication entre les appareils, et de réaliser pour vous le transfert de contenu et la synergie des fonctions entre les appareils.</th>
+								<td>Informations sur l'appareil</th>
+								<td>Collecte système</th>
+								<td>Identifiant unique de l'appareil, type d'appareil, modèle d'appareil, nom d'appareil, adresse Bluetooth, adresse Wi-Fi, SSID Wi-Fi et adresse IP</th>
+							</tr>
+							<tr>
+								<td>Transfert de fichiers</th>
+								<td>Pour vous fournir le "Transfert de fichiers", grâce auquel vous pouvez réaliser le transfert de fichiers entre appareils, nous collectons à cette fin votre identifiant d'appareil (ID d'appareil), le nom d'appareil, le type d'appareil, les informations du fichier (nom du fichier et contenu du fichier), les informations de contact contenues dans le fichier (y compris le nom, la date de naissance, le numéro de téléphone personnel, l'adresse e-mail, l'adresse, le poste et l'unité de travail), le nom du réseau Wi‑Fi, etc.</th>
+								<td>Informations sur l'appareil, informations sur le fichier, informations de contact</th>
+								<td>Collecte système</th>
+								<td>Identifiant d'appareil (ID d'appareil), nom d'appareil, type d'appareil, informations du fichier (nom du fichier et contenu du fichier), informations de contact contenues dans le fichier (y compris le nom, la date de naissance, le numéro de téléphone personnel, l'adresse e-mail, l'adresse, le poste et l'unité de travail), nom du réseau Wi‑Fi</th>
+							</tr>
+						</tbody>
+					</table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

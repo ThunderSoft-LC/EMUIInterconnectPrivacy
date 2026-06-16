@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seznam zbranih osebnih podatkov</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+        .nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+        .nav a:hover {
+            opacity: 0.8;
+        }
+        .main {
+            padding: 2rem 0;
+        }
+        .content {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 34px;
+            font-weight: 600;
+            color: black;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            text-align: center;
+        }
+        .update-date {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+        .section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: black;
+            margin: 1.5rem 0 1rem 0;
+        }
+        .section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+        .weight-bold {
+            color: black;
+            font-weight: 600;
+        }
+        .link {
+            color: blue;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .header .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            .content {
+                padding: 2rem 1.5rem;
+                margin: 0 1rem;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .section h2 {
+                font-size: 20px;
+            }
+            .section p {
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            .content {
+                padding: 1.5rem 1rem;
+                margin: 0 0.5rem;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            .section h2 {
+                font-size: 18px;
+            }
+            .section h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Seznam zbranih osebnih podatkov</h1>
+                <p class="update-date"></p>
+                <div class="section">
+                    <p><span class="weight-bold">ThunderSoft (Thunder Software Technology Co., Ltd.)</span> (v nadaljevanju »mi«) bo strogo upoštevala zahteve državnih zakonov in predpisov, zakonitost in skladnost vgradila v načrtovanje izdelkov in poslovne procese ter uporabljala napredne varnostne tehnologije v industriji za zagotavljanje varnosti podatkov. Hkrati zelo resno obravnavamo varstvo vaših osebnih podatkov in zasebnosti ter si prizadevamo zaščititi pravice vsakega posameznika do zasebnosti. Zato se držimo 5 temeljnih načel varovanja zasebnosti:
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Minimizacija podatkov: Vztrajamo pri zbiranju samo tistih osebnih podatkov, ki so potrebni za izvajanje poslovnih funkcij, da služimo vašim potrebam.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Obdelava na strani naprave: Vztrajamo pri obdelavi in analizi osebnih podatkov na uporabnikovi napravi, kadar je to mogoče.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Preglednost in nadzorljivost: Pri zbiranju osebnih podatkov uporabnika jasno in nedvoumno obvestimo ter zagotovimo, da uporabnik ve, kako se podatki uporabljajo in kako se odjavi.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Zaščita identitete: Uporabljamo tehnologije za izboljšanje zasebnosti, da skrijemo identiteto uporabnika, ko podatki zapustijo njegovo napravo.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+                        <tr>
+                            <th>Poslovni scenarij</th>
+                            <th>Namen zbiranja</th>
+                            <th>Vrsta osebnih podatkov</th>
+                            <th>Način zbiranja</th>
+                            <th>Polja osebnih podatkov</th>
+                        </tr>
+                        <tr>
+                            <td>Odkrivanje naprav in povezovanje</td>
+                            <td>Da bi omogočili medsebojno povezljivost vaših naprav, lahko zbiramo edinstveni identifikator vaše naprave, vrsto naprave, model naprave, ime naprave, Bluetooth naslov, Wi-Fi naslov, Wi-Fi SSID in IP naslov, da odkrijemo naprave v vaši bližini, ki so na voljo za seznanjanje in povezovanje, vzpostavimo komunikacijsko povezavo med napravami ter vam omogočimo pretok vsebine in usklajevanje funkcij med napravami.</td>
+                            <td>Informacije o napravi</td>
+                            的人们Sistemsko zbiranje</td>
+                            <td>Edinstveni identifikator naprave, vrsta naprave, model naprave, ime naprave, Bluetooth naslov, Wi-Fi naslov, Wi-Fi SSID in IP naslov</td>
+                        </tr>
+                        <tr>
+                            <td>Prenos datotek med napravami</td>
+                            <td>Da vam zagotovimo »prenos datotek med napravami«, prek katerega lahko izvajate čeznapravni prenos datotek. V ta namen bomo zbrali identifikator vaše naprave (ID naprave), ime naprave, vrsto naprave, informacije o datoteki (ime datoteke in vsebina datoteke), kontaktne podatke, ki jih vsebuje datoteka (vključno z imenom, datumom rojstva, osebno telefonsko številko, e-poštnim naslovom, naslovom, položajem in delovnim mestom), ime Wi-Fi itd.</td>
+                            <td>Informacije o napravi, informacije o datotekah, kontaktne informacije</td>
+                            <td>Sistemsko zbiranje</td>
+                            <td>Identifikator naprave (ID naprave), ime naprave, vrsta naprave, informacije o datoteki (ime datoteke in vsebina datoteke), kontaktni podatki, ki jih vsebuje datoteka (vključno z imenom, datumom rojstva, osebno telefonsko številko, e-poštnim naslovom, naslovom, položajem in delovnim mestom), ime Wi-Fi</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

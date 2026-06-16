@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kogutud isikuandmete nimekiri</title>
+	<style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+			text-align: center;
+        }
+		/* Stiilide lähtestamine */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* Päise stiilid */
+		.header {
+			background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+			color: white;
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.header .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo-img {
+			height: 40px;
+			width: auto;
+		}
+
+		.nav ul {
+			display: flex;
+			list-style: none;
+			gap: 2rem;
+		}
+
+		.nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: opacity 0.3s;
+		}
+
+		.nav a:hover {
+			opacity: 0.8;
+		}
+
+		/* Põhisisu stiilid */
+		.main {
+			padding: 2rem 0;
+		}
+
+		.content {
+			background: white;
+			padding: 3rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 34px;
+			font-weight: 600;
+			color: black;
+			margin-bottom: 0.5rem;
+			line-height: 1.3;
+			text-align:center;
+		}
+
+		.update-date {
+			color: #666;
+			font-size: 14px;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #eee;
+			text-align:center;
+		}
+
+		.section {
+			margin-bottom: 2rem;
+		}
+
+		.section h2 {
+			font-size: 22px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.section h3 {
+			font-size: 18px;
+			font-weight: 600;
+			color: black;
+			margin: 1.5rem 0 1rem 0;
+		}
+
+		.section p {
+			margin-bottom: 1rem;
+			text-align: justify;
+			color: #555;
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		.section p:last-child {
+			margin-bottom: 0;
+		}
+		.weight-bold
+		{
+			color:black;
+			font-weight: 600;
+		}
+		.link
+		{
+			color:blue;
+			text-decoration: none;
+		}
+
+		/* Responsiivne disain */
+		@media (max-width: 768px) {
+			.header .container {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.nav ul {
+				flex-direction: column;
+				gap: 1rem;
+				text-align: center;
+			}
+
+			.content {
+				padding: 2rem 1.5rem;
+				margin: 0 1rem;
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+
+			.section h2 {
+				font-size: 20px;
+			}
+
+			.section p {
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.container {
+				padding: 0 15px;
+			}
+
+			.content {
+				padding: 1.5rem 1rem;
+				margin: 0 0.5rem;
+			}
+
+			h1 {
+				font-size: 22px;
+			}
+
+			.section h2 {
+				font-size: 18px;
+			}
+
+			.section h3 {
+				font-size: 16px;
+			}
+		}
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Kogutud isikuandmete nimekiri</h1>
+				<p class="update-date"></p>
+				<div class="section">
+                    <p><span class="weight-bold">ThunderSoft</span> (edaspidi "meie") järgib rangelt riigi seaduste ja määruste nõudeid, integreerides seaduslikkuse ja vastavuse tootekujundusse ja äriprotsessidesse ning kasutab andmeturbe tagamiseks tööstuse arenenud turvatehnoloogiaid. Samal ajal peame väga oluliseks teie isikuandmete ja privaatsuse kaitset ning oleme pühendunud igaühe privaatsusõiguste kaitsmisele, mistõttu järgime 5 privaatsuskaitse põhiprintsiipi:
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Andmete minimeerimine: Nõuame ainult nende isikuandmete kogumist, mis on vajalikud äriteenuste elluviimiseks, et teenida teie vajadusi.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Andmete töötlemine seadmes: Nõuame isikuandmete töötlemise ja analüüsi tegemist võimaluse korral kasutaja seadmes.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Läbipaistvus ja kontrollitavus: Isikuandmete kogumisel teavitame kasutajat selgelt ja üheselt ning tagame, et kasutaja teab, kuidas andmeid kasutatakse ja kuidas loobuda.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Identiteedi kaitse: Kasutame privaatsust suurendavaid tehnoloogiaid, et varjata kasutaja identiteeti, kui andmed lahkuvad kasutaja seadmest.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+						<tbody>
+							<th>Äristsenaarium</th>
+							<th>Kogumise eesmärk</th>
+							<th>Isikuandmete liik</th>
+							<th>Kogumise viis</th>
+							<th>Isikuandmete väljad</th>
+							<tr>
+								<td>Seadmete avastamine ja ühendamine</th>
+								<td>Selleks, et võimaldada teie seadmete omavahelist ühenduvust, võime koguda teie seadme unikaalset identifikaatorit, seadme tüüpi, seadme mudelit, seadme nime, Bluetoothi aadressi, Wi-Fi aadressi, Wi-Fi SSID-d ja IP-aadressi, et tuvastada teie ümber paaristamiseks ja ühendamiseks saadaolevaid seadmeid, luua seadmete vahel sidelingid ning teostada teie jaoks seadmete vahelist sisu liikumist ja funktsioonide koostööd.</th>
+								<td>Seadme andmed</th>
+								<td>Süsteemi kogutav</th>
+								<td>Seadme unikaalne identifikaator, seadme tüüp, seadme mudel, seadme nimi, Bluetoothi aadress, Wi-Fi aadress, Wi-Fi SSID ja IP-aadress</th>
+							</tr>
+							<tr>
+								<td>Failiedastus</th>
+								<td>Et pakkuda teile "Failiedastust", mille kaudu saate teostada failide seadmevahelist edastamist, kogume selleks teie seadme identifikaatorit (seadme ID), seadme nime, seadme tüüpi, faili andmeid (faili nimi ja faili sisu), failis sisalduvaid kontaktandmeid (sealhulgas nimi, sünnikuupäev, isiklik telefoninumber, e-posti aadress, aadress, ametikoht ja tööüksus), Wi-Fi nime jne.</th>
+								<td>Seadme andmed, faili andmed, kontaktandmed</th>
+								<td>Süsteemi kogutav</th>
+								<td>Seadme identifikaator (seadme ID), seadme nimi, seadme tüüp, faili andmed (faili nimi ja faili sisu), failis sisalduvad kontaktandmed (sealhulgas nimi, sünnikuupäev, isiklik telefoninumber, e-posti aadress, aadress, ametikoht ja tööüksus), Wi-Fi nimi</th>
+							</tr>
+						</tbody>
+					</table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

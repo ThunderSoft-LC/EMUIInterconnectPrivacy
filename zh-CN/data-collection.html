@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收集个人信息清单</title>
+	<style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+			text-align: center;
+        }
+		/* 重置样式 */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* 头部样式 */
+		.header {
+			background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+			color: white;
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.header .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo-img {
+			height: 40px;
+			width: auto;
+		}
+
+		.nav ul {
+			display: flex;
+			list-style: none;
+			gap: 2rem;
+		}
+
+		.nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: opacity 0.3s;
+		}
+
+		.nav a:hover {
+			opacity: 0.8;
+		}
+
+		/* 主要内容样式 */
+		.main {
+			padding: 2rem 0;
+		}
+
+		.content {
+			background: white;
+			padding: 3rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 34px;
+			font-weight: 600;
+			color: black;
+			margin-bottom: 0.5rem;
+			line-height: 1.3;
+			text-align:center;
+		}
+
+		.update-date {
+			color: #666;
+			font-size: 14px;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #eee;
+			text-align:center;
+		}
+
+		.section {
+			margin-bottom: 2rem;
+		}
+
+		.section h2 {
+			font-size: 22px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.section h3 {
+			font-size: 18px;
+			font-weight: 600;
+			color: black;
+			margin: 1.5rem 0 1rem 0;
+		}
+
+		.section p {
+			margin-bottom: 1rem;
+			text-align: justify;
+			color: #555;
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		.section p:last-child {
+			margin-bottom: 0;
+		}
+		.weight-bold
+		{
+			color:black;
+			font-weight: 600;
+		}
+		.link
+		{
+			color:blue;
+			text-decoration: none;
+		}
+
+		/* 响应式设计 */
+		@media (max-width: 768px) {
+			.header .container {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.nav ul {
+				flex-direction: column;
+				gap: 1rem;
+				text-align: center;
+			}
+
+			.content {
+				padding: 2rem 1.5rem;
+				margin: 0 1rem;
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+
+			.section h2 {
+				font-size: 20px;
+			}
+
+			.section p {
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.container {
+				padding: 0 15px;
+			}
+
+			.content {
+				padding: 1.5rem 1rem;
+				margin: 0 0.5rem;
+			}
+
+			h1 {
+				font-size: 22px;
+			}
+
+			.section h2 {
+				font-size: 18px;
+			}
+
+			.section h3 {
+				font-size: 16px;
+			}
+		}
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>收集个人信息清单</h1>
+				<p class="update-date"></p>
+				<div class="section">
+                    <p><span class="weight-bold">中科创达</span>（以下简称我们）会严格遵从国家的法律法规要求，将合法合规融入产品设计和业务流程中，并采用业界先进的安全技术保证数据安全。同时我们非常重视您的个人信息和隐私保护，致力于捍卫每个人的隐私权利，为此我们坚持隐私保护5个基本原则：
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;数据最小化：坚持仅采集实现业务功能所必须的个人数据，以服务于你的需求。
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;数据端侧处理：坚持尽可能在用户的设备上完成个人数据的处理和分析。
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;透明可控：当采集个人数据时，清晰、明确地告知用户，并确保用户知道数据被如何使用，以及如何退出。
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;身份保护：使用隐私增强技术，在数据离开用户的设备时，隐藏用户的身份。
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+						<tr>
+							<th>业务场景</th>
+							<th>收集目的</th>
+							<th>个人信息类型</th>
+							<th>收集的方式</th>
+							<th>个人信息字段</th>
+						</tr>
+						<tr>
+							<td>设备发现及连接</td>
+							<td>为了让您的设备之间可以实现互联，我们可能会收集您的设备唯一标识符、设备类型、设备型号、设备名称、蓝牙地址、Wi-Fi 地址、Wi-Fi SSID 以及 IP 地址来发现您身边可供配对连接的设备，建立设备间的通信链接，以为您实现设备间内容的流转和功能的协同</td>
+							<td>设备信息</td>
+							<td>系统收集</td>
+							<td>设备唯一标识符、设备类型、设备型号、设备名称、蓝牙地址、Wi-Fi 地址、Wi-Fi SSID 以及 IP 地址</td>
+						</tr>
+						<tr>
+							<td>文件互传</td>
+							<td>为您提供“文件互传”，通过该功能您可以实现文件的跨设备传输流转，，为此我们会收集您的设备标识符（设备ID）、设备名称、设备类型、文件信息（文件名称以及文件内容）、文件中包含的联系人信息（包括姓名、生日、个人电话号码、电子邮件地址、地址、职位以及工作单位）、Wi-Fi 名称等内容</td>
+							<td>设备信息，文件信息，联系人信息</td>
+							<td>系统收集</td>
+							<td>设备标识符（设备ID）、设备名称、设备类型、文件信息（文件名称以及文件内容）、文件中包含的联系人信息（包括姓名、生日、个人电话号码、电子邮件地址、地址、职位以及工作单位）、Wi-Fi 名称</td>
+						</tr>
+					</table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenco delle informazioni personali raccolte</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+        /* 重置样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部样式 */
+        .header {
+            background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        .nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* 主要内容样式 */
+        .main {
+            padding: 2rem 0;
+        }
+
+        .content {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 34px;
+            font-weight: 600;
+            color: black;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            text-align:center;
+        }
+
+        .update-date {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            text-align:center;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: black;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+        .weight-bold {
+            color:black;
+            font-weight: 600;
+        }
+        .link {
+            color:blue;
+            text-decoration: none;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+                margin: 0 1rem;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .section p {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .content {
+                padding: 1.5rem 1rem;
+                margin: 0 0.5rem;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .section h2 {
+                font-size: 18px;
+            }
+
+            .section h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Elenco delle informazioni personali raccolte</h1>
+                <p class="update-date"></p>
+                <div class="section">
+                    <p><span class="weight-bold">ThunderSoft</span> (di seguito “noi”) rispetterà rigorosamente i requisiti delle leggi e dei regolamenti nazionali, integrando la legalità e la conformità nella progettazione del prodotto e nei processi aziendali, e adotterà le tecnologie di sicurezza avanzate del settore per garantire la sicurezza dei dati. Allo stesso tempo, teniamo in grande considerazione la protezione delle vostre informazioni personali e della vostra privacy, impegnandoci a difendere i diritti alla privacy di ogni persona. A tal fine, sosteniamo 5 principi fondamentali della protezione della privacy:
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Minimizzazione dei dati: insistiamo sulla raccolta solo dei dati personali necessari per realizzare le funzioni aziendali, al fine di servire le vostre esigenze.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Elaborazione locale: insistiamo sull’elaborazione e l’analisi dei dati personali, ove possibile, sul dispositivo dell’utente.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Trasparenza e controllo: quando raccogliamo dati personali, informiamo l’utente in modo chiaro e inequivocabile, assicurando che l’utente sappia come vengono utilizzati i dati e come recedere.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Protezione dell’identità: utilizziamo tecnologie di miglioramento della privacy per nascondere l’identità dell’utente quando i dati lasciano il dispositivo dell’utente.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Scenario operativo</th>
+                                <th>Scopo della raccolta</th>
+                                <th>Tipo di informazioni personali</th>
+                                <th>Metodo di raccolta</th>
+                                <th>Campi delle informazioni personali</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Individuazione e connessione dei dispositivi</th>
+                                <td>Per consentire l’interconnessione tra i vostri dispositivi, potremmo raccogliere l’identificatore univoco del dispositivo, il tipo di dispositivo, il modello del dispositivo, il nome del dispositivo, l’indirizzo Bluetooth, l’indirizzo Wi-Fi, l’SSID Wi-Fi e l’indirizzo IP per individuare i dispositivi circostanti disponibili per l’accoppiamento e la connessione, stabilire collegamenti di comunicazione tra i dispositivi e realizzare il flusso di contenuti e la collaborazione delle funzioni tra i dispositivi.</th>
+                                <td>Informazioni sul dispositivo</th>
+                                <td>Raccolta di sistema</th>
+                                <td>Identificatore univoco del dispositivo, tipo di dispositivo, modello del dispositivo, nome del dispositivo, indirizzo Bluetooth, indirizzo Wi-Fi, SSID Wi-Fi, indirizzo IP</th>
+                            </tr>
+                            <tr>
+                                <td>Trasferimento reciproco di file</th>
+                                <td>Per fornirvi il “Trasferimento reciproco di file”, attraverso il quale potete realizzare il trasferimento e la circolazione di file tra dispositivi, a tal fine raccoglieremo l’identificatore del vostro dispositivo (ID dispositivo), il nome del dispositivo, il tipo di dispositivo, le informazioni del file (nome del file e contenuto del file), le informazioni dei contatti contenute nel file (incluse nome, data di nascita, numero di telepersonale, indirizzo email, indirizzo, posizione e luogo di lavoro), il nome della rete Wi-Fi, ecc.</th>
+                                <td>Informazioni sul dispositivo, informazioni sul file, informazioni sui contatti</th>
+                                <td>Raccolta di sistema</th>
+                                <td>Identificatore del dispositivo (ID dispositivo), nome del dispositivo, tipo di dispositivo, informazioni del file (nome del file e contenuto del file), informazioni dei contatti contenute nel file (incluse nome, data di nascita, numero di telepersonale, indirizzo email, indirizzo, posizione e luogo di lavoro), nome della rete Wi-Fi</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

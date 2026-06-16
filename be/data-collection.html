@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спіс сабранай персанальнай інфармацыі</title>
+	<style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+			text-align: center;
+        }
+		/* Скід стыляў */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* Стылі загалоўка */
+		.header {
+			background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+			color: white;
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.header .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo-img {
+			height: 40px;
+			width: auto;
+		}
+
+		.nav ul {
+			display: flex;
+			list-style: none;
+			gap: 2rem;
+		}
+
+		.nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: opacity 0.3s;
+		}
+
+		.nav a:hover {
+			opacity: 0.8;
+		}
+
+		/* Стылі асноўнага зместу */
+		.main {
+			padding: 2rem 0;
+		}
+
+		.content {
+			background: white;
+			padding: 3rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 34px;
+			font-weight: 600;
+			color: black;
+			margin-bottom: 0.5rem;
+			line-height: 1.3;
+			text-align:center;
+		}
+
+		.update-date {
+			color: #666;
+			font-size: 14px;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #eee;
+			text-align:center;
+		}
+
+		.section {
+			margin-bottom: 2rem;
+		}
+
+		.section h2 {
+			font-size: 22px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.section h3 {
+			font-size: 18px;
+			font-weight: 600;
+			color: black;
+			margin: 1.5rem 0 1rem 0;
+		}
+
+		.section p {
+			margin-bottom: 1rem;
+			text-align: justify;
+			color: #555;
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		.section p:last-child {
+			margin-bottom: 0;
+		}
+		.weight-bold
+		{
+			color:black;
+			font-weight: 600;
+		}
+		.link
+		{
+			color:blue;
+			text-decoration: none;
+		}
+
+		/* Адаптыўны дызайн */
+		@media (max-width: 768px) {
+			.header .container {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.nav ul {
+				flex-direction: column;
+				gap: 1rem;
+				text-align: center;
+			}
+
+			.content {
+				padding: 2rem 1.5rem;
+				margin: 0 1rem;
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+
+			.section h2 {
+				font-size: 20px;
+			}
+
+			.section p {
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.container {
+				padding: 0 15px;
+			}
+
+			.content {
+				padding: 1.5rem 1rem;
+				margin: 0 0.5rem;
+			}
+
+			h1 {
+				font-size: 22px;
+			}
+
+			.section h2 {
+				font-size: 18px;
+			}
+
+			.section h3 {
+				font-size: 16px;
+			}
+		}
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Спіс сабранай персанальнай інфармацыі</h1>
+				<p class="update-date"></p>
+				<div class="section">
+                    <p><span class="weight-bold">ThunderSoft</span> (далей "мы") будзе строга прытрымлівацца патрабаванняў дзяржаўных законаў і правілаў, уключаючы законнасць і адпаведнасць у дызайн прадуктаў і бізнес-працэсы, і выкарыстоўваць перадавыя галіновыя тэхналогіі бяспекі для забеспячэння бяспекі даных. У той жа час мы надаем вялікую ўвагу абароне вашай персанальнай інфармацыі і прыватнасці, імкнемся абараняць правы на прыватнасць кожнага чалавека, для чаго мы прытрымліваемся 5 асноўных прынцыпаў абароны прыватнасці:
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Мінімізацыя даных: Настойваем на зборы толькі тых персанальных даных, якія неабходны для рэалізацыі бізнес-функцый, каб служыць вашым патрэбам.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Апрацоўка даных на прыладзе: Настойваем на тым, каб апрацоўка і аналіз персанальных даных выконваліся на прыладзе карыстальніка, наколькі гэта магчыма.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Празрыстасць і кантраляванасць: Пры зборы персанальных даных ясна і дакладна інфармуем карыстальніка і гарантуем, што карыстальнік ведае, як даныя выкарыстоўваюцца і як адмовіцца.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Абарона асобы: Выкарыстоўваем тэхналогіі павышэння прыватнасці, каб схаваць асобу карыстальніка, калі даныя пакідаюць прыладу карыстальніка.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+						<tbody>
+							<th>Бізнес-сцэнарый</th>
+							<th>Мэта збору</th>
+							<th>Тып персанальнай інфармацыі</th>
+							<th>Спосаб збору</th>
+							<th>Палі персанальнай інфармацыі</th>
+							<tr>
+								<td>Выяўленне і падключэнне прылад</th>
+								<td>Каб забяспечыць сувязь паміж вашымі прыладамі, мы можам сабраць ваш унікальны ідэнтыфікатар прылады, тып прылады, мадэль прылады, назву прылады, Bluetooth-адрас, Wi-Fi-адрас, Wi-Fi SSID і IP-адрас, каб выявіць побач з вамі прылады, даступныя для спарвання і падключэння, усталяваць камунікацыйныя сувязі паміж прыладамі і забяспечыць для вас перадачу зместу і сінэргію функцый паміж прыладамі.</th>
+								<td>Інфармацыя аб прыладзе</th>
+								<td>Сістэмны збор</th>
+								<td>Унікальны ідэнтыфікатар прылады, тып прылады, мадэль прылады, назва прылады, Bluetooth-адрас, Wi-Fi-адрас, Wi-Fi SSID і IP-адрас</th>
+							</tr>
+							<tr>
+								<td>Перадача файлаў</th>
+								<td>Каб прадаставіць вам "Перадачу файлаў", з дапамогай якой вы можаце ажыццяўляць перадачу файлаў паміж прыладамі. Для гэтага мы будзем збіраць ваш ідэнтыфікатар прылады (ID прылады), назву прылады, тып прылады, інфармацыю аб файле (назва файла і змест файла), інфармацыю аб кантактах, якая змяшчаецца ў файле (уключаючы імя, дату нараджэння, асабісты нумар тэлефона, адрас электроннай пошты, адрас, пасаду і месца працы), назву Wi-Fi і г.д.</th>
+								<td>Інфармацыя аб прыладзе, Інфармацыя аб файле, Інфармацыя аб кантактах</th>
+								<td>Сістэмны збор</th>
+								<td>Ідэнтыфікатар прылады (ID прылады), назва прылады, тып прылады, інфармацыя аб файле (назва файла і змест файла), інфармацыя аб кантактах, якая змяшчаецца ў файле (уключаючы імя, дату нараджэння, асабісты нумар тэлефона, адрас электроннай пошты, адрас, пасаду і месца працы), назва Wi-Fi</th>
+							</tr>
+						</tbody>
+					</table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

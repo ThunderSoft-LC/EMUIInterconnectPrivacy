@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listahan ng Nakolektang Personal na Impormasyon</title>
+	<style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+			text-align: center;
+        }
+		/* I-reset ang mga estilo */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* Mga estilo ng header */
+		.header {
+			background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+			color: white;
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.header .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo-img {
+			height: 40px;
+			width: auto;
+		}
+
+		.nav ul {
+			display: flex;
+			list-style: none;
+			gap: 2rem;
+		}
+
+		.nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: opacity 0.3s;
+		}
+
+		.nav a:hover {
+			opacity: 0.8;
+		}
+
+		/* Mga estilo ng pangunahing nilalaman */
+		.main {
+			padding: 2rem 0;
+		}
+
+		.content {
+			background: white;
+			padding: 3rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 34px;
+			font-weight: 600;
+			color: black;
+			margin-bottom: 0.5rem;
+			line-height: 1.3;
+			text-align:center;
+		}
+
+		.update-date {
+			color: #666;
+			font-size: 14px;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #eee;
+			text-align:center;
+		}
+
+		.section {
+			margin-bottom: 2rem;
+		}
+
+		.section h2 {
+			font-size: 22px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.section h3 {
+			font-size: 18px;
+			font-weight: 600;
+			color: black;
+			margin: 1.5rem 0 1rem 0;
+		}
+
+		.section p {
+			margin-bottom: 1rem;
+			text-align: justify;
+			color: #555;
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		.section p:last-child {
+			margin-bottom: 0;
+		}
+		.weight-bold
+		{
+			color:black;
+			font-weight: 600;
+		}
+		.link
+		{
+			color:blue;
+			text-decoration: none;
+		}
+
+		/* Disenyong tumutugon */
+		@media (max-width: 768px) {
+			.header .container {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.nav ul {
+				flex-direction: column;
+				gap: 1rem;
+				text-align: center;
+			}
+
+			.content {
+				padding: 2rem 1.5rem;
+				margin: 0 1rem;
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+
+			.section h2 {
+				font-size: 20px;
+			}
+
+			.section p {
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.container {
+				padding: 0 15px;
+			}
+
+			.content {
+				padding: 1.5rem 1rem;
+				margin: 0 0.5rem;
+			}
+
+			h1 {
+				font-size: 22px;
+			}
+
+			.section h2 {
+				font-size: 18px;
+			}
+
+			.section h3 {
+				font-size: 16px;
+			}
+		}
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Listahan ng Nakolektang Personal na Impormasyon</h1>
+				<p class="update-date"></p>
+				<div class="section">
+                    <p><span class="weight-bold">ThunderSoft</span> (simula dito ay tinutukoy bilang "kami") ay mahigpit na susunod sa mga kinakailangan ng mga batas at regulasyon ng bansa, isasama ang legal at pagsunod sa disenyo ng produkto at mga proseso ng negosyo, at gagamit ng mga advanced na teknolohiyang pangseguridad ng industriya upang matiyak ang seguridad ng datos. Kasabay nito, labis naming pinahahalagahan ang proteksyon ng iyong personal na impormasyon at privacy, at nakatuon sa pagtatanggol sa mga karapatan sa privacy ng bawat isa, kaya't sinusunod namin ang 5 pangunahing prinsipyo ng proteksyon sa privacy:
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Pag-minimize ng datos: Iginigiit ang pagkolekta lamang ng personal na datos na kinakailangan upang maisakatuparan ang mga tungkulin ng negosyo, upang mapagsilbihan ang iyong mga pangangailangan.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Pagproseso ng datos sa dulo ng aparato: Iginigiit na kumpletuhin ang pagproseso at pagsusuri ng personal na datos sa aparato ng gumagamit hangga't maaari.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Transparency at kontrol: Kapag kumukolekta ng personal na datos, malinaw at tiyak na ipinapaalam sa gumagamit, at tinitiyak na alam ng gumagamit kung paano ginagamit ang datos at kung paano lumabas.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Proteksyon ng pagkakakilanlan: Gumagamit ng mga teknolohiyang nagpapahusay ng privacy upang itago ang pagkakakilanlan ng gumagamit kapag ang datos ay umalis sa aparato ng gumagamit.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+						<tbody>
+							<th>Eskenario ng Negosyo</th>
+							<th>Layunin ng Pagkolekta</th>
+							<th>Uri ng Personal na Impormasyon</th>
+							<th>Paraan ng Pagkolekta</th>
+							<th>Mga Field ng Personal na Impormasyon</th>
+							<tr>
+								<td>Pagtuklas at Pagkonekta ng Aparato</th>
+								<td>Upang mapagana ang interconnectivity sa pagitan ng iyong mga aparato, maaari naming kolektahin ang iyong natatanging identifier ng aparato, uri ng aparato, modelo ng aparato, pangalan ng aparato, address ng Bluetooth, address ng Wi-Fi, SSID ng Wi-Fi, at IP address upang matuklasan ang mga aparatong magagamit para sa pagpapares at pagkonekta sa iyong paligid, magtatag ng mga link ng komunikasyon sa pagitan ng mga aparato, at para sa iyo ay maisakatuparan ang daloy ng nilalaman at koordinasyon ng mga function sa pagitan ng mga aparato.</th>
+								<td>Impormasyon ng Aparato</th>
+								<td>Pagkolekta ng Sistema</th>
+								<td>Natatanging identifier ng aparato, uri ng aparato, modelo ng aparato, pangalan ng aparato, address ng Bluetooth, address ng Wi-Fi, SSID ng Wi-Fi, at IP address</th>
+							</tr>
+							<tr>
+								<td>Paglipat ng File</th>
+								<td>Upang maibigay sa iyo ang "Paglipat ng File", kung saan maaari mong maisakatuparan ang paglipat ng mga file sa pagitan ng mga aparato, para dito ay kokolektahin namin ang iyong identifier ng aparato (ID ng aparato), pangalan ng aparato, uri ng aparato, impormasyon ng file (pangalan ng file at nilalaman ng file), impormasyon ng contact na nakapaloob sa file (kabilang ang pangalan, kaarawan, personal na numero ng telepono, email address, address, posisyon, at yunit ng trabaho), pangalan ng Wi-Fi, at iba pa.</th>
+								<td>Impormasyon ng Aparato, Impormasyon ng File, Impormasyon ng Contact</th>
+								<td>Pagkolekta ng Sistema</th>
+								<td>Identifier ng aparato (ID ng aparato), pangalan ng aparato, uri ng aparato, impormasyon ng file (pangalan ng file at nilalaman ng file), impormasyon ng contact na nakapaloob sa file (kabilang ang pangalan, kaarawan, personal na numero ng telepono, email address, address, posisyon, at yunit ng trabaho), pangalan ng Wi-Fi</th>
+							</tr>
+						</tbody>
+					<table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

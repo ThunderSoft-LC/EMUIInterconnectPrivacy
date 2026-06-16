@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>व्यक्तिगत जानकारी संग्रह सूची</title>
+	<style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+			text-align: center;
+        }
+		/* 重置样式 */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, 'Noto Sans Devanagari', sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* 头部样式 */
+		.header {
+			background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+			color: white;
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.header .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo-img {
+			height: 40px;
+			width: auto;
+		}
+
+		.nav ul {
+			display: flex;
+			list-style: none;
+			gap: 2rem;
+		}
+
+		.nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: opacity 0.3s;
+		}
+
+		.nav a:hover {
+			opacity: 0.8;
+		}
+
+		/* 主要内容样式 */
+		.main {
+			padding: 2rem 0;
+		}
+
+		.content {
+			background: white;
+			padding: 3rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 34px;
+			font-weight: 600;
+			color: black;
+			margin-bottom: 0.5rem;
+			line-height: 1.3;
+			text-align:center;
+		}
+
+		.update-date {
+			color: #666;
+			font-size: 14px;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #eee;
+			text-align:center;
+		}
+
+		.section {
+			margin-bottom: 2rem;
+		}
+
+		.section h2 {
+			font-size: 22px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.section h3 {
+			font-size: 18px;
+			font-weight: 600;
+			color: black;
+			margin: 1.5rem 0 1rem 0;
+		}
+
+		.section p {
+			margin-bottom: 1rem;
+			text-align: justify;
+			color: #555;
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		.section p:last-child {
+			margin-bottom: 0;
+		}
+		.weight-bold
+		{
+			color:black;
+			font-weight: 600;
+		}
+		.link
+		{
+			color:blue;
+			text-decoration: none;
+		}
+
+		/* 响应式设计 */
+		@media (max-width: 768px) {
+			.header .container {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.nav ul {
+				flex-direction: column;
+				gap: 1rem;
+				text-align: center;
+			}
+
+			.content {
+				padding: 2rem 1.5rem;
+				margin: 0 1rem;
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+
+			.section h2 {
+				font-size: 20px;
+			}
+
+			.section p {
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.container {
+				padding: 0 15px;
+			}
+
+			.content {
+				padding: 1.5rem 1rem;
+				margin: 0 0.5rem;
+			}
+
+			h1 {
+				font-size: 22px;
+			}
+
+			.section h2 {
+				font-size: 18px;
+			}
+
+			.section h3 {
+				font-size: 16px;
+			}
+		}
+		/* हिंदी समर्थन */
+		table {
+			direction: ltr;
+		}
+		th, td {
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>व्यक्तिगत जानकारी संग्रह सूची</h1>
+				<p class="update-date"></p>
+				<div class="section">
+                    <p><span class="weight-bold">थंडरसॉफ्ट</span> (इसके बाद "हम") राष्ट्रीय कानूनों और विनियमों की आवश्यकताओं का सख्ती से पालन करेगा, कानूनी अनुपालन को उत्पाद डिजाइन और व्यावसायिक प्रक्रियाओं में एकीकृत करेगा, और डेटा सुरक्षा सुनिश्चित करने के लिए उद्योग की उन्नत सुरक्षा तकनीकों को अपनाएगा। साथ ही हम आपकी व्यक्तिगत जानकारी और गोपनीयता संरक्षण को बहुत महत्व देते हैं, प्रत्येक व्यक्ति के गोपनीयता अधिकारों की रक्षा के लिए प्रतिबद्ध हैं, इसके लिए हम गोपनीयता संरक्षण के 5 मूलभूत सिद्धांतों का पालन करते हैं:
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;डेटा न्यूनतमकरण: केवल व्यावसायिक कार्यों को पूरा करने के लिए आवश्यक व्यक्तिगत डेटा एकत्र करने पर जोर देते हैं, ताकि आपकी आवश्यकताओं को पूरा किया जा सके।
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;डिवाइस-साइड प्रोसेसिंग: जितना संभव हो उपयोगकर्ता के डिवाइस पर व्यक्तिगत डेटा का प्रसंस्करण और विश्लेषण पूरा करने पर जोर देते हैं।
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;पारदर्शिता और नियंत्रण: व्यक्तिगत डेटा एकत्र करते समय, उपयोगकर्ता को स्पष्ट और सटीक रूप से सूचित करते हैं, और सुनिश्चित करते हैं कि उपयोगकर्ता जानता है कि डेटा का उपयोग कैसे किया जाता है और कैसे बाहर निकलना है।
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;पहचान संरक्षण: गोपनीयता बढ़ाने वाली तकनीकों का उपयोग करते हैं, डेटा उपयोगकर्ता के डिवाइस से बाहर निकलते समय उपयोगकर्ता की पहचान को छिपाने के लिए।
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+						<thead>
+							<tr>
+								<th>व्यावसायिक परिदृश्य</th>
+								<th>संग्रह उद्देश्य</th>
+								<th>व्यक्तिगत जानकारी का प्रकार</th>
+								<th>संग्रह का तरीका</th>
+								<th>व्यक्तिगत जानकारी फ़ील्ड</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>डिवाइस खोज और कनेक्शन</td>
+								<td>आपके उपकरणों के बीच अंतरसंबंध सक्षम करने के लिए, हम आपके डिवाइस अद्वितीय पहचानकर्ता, डिवाइस प्रकार, डिवाइस मॉडल, डिवाइस नाम, ब्लूटूथ पता, वाई-फाई पता, वाई-फाई SSID और आईपी पता एकत्र कर सकते हैं, ताकि आपके आसपास युग्मन और कनेक्शन के लिए उपलब्ध डिवाइसों का पता लगाया जा सके, उपकरणों के बीच संचार लिंक स्थापित किया जा सके, और आपके लिए उपकरणों के बीच सामग्री के प्रवाह और कार्यों के सहयोग को साकार किया जा सके।</td>
+								<td>डिवाइस जानकारी</td>
+								<td>सिस्टम संग्रह</td>
+								<td>डिवाइस अद्वितीय पहचानकर्ता, डिवाइस प्रकार, डिवाइस मॉडल, डिवाइस नाम, ब्लूटूथ पता, वाई-फाई पता, वाई-फाई SSID, आईपी पता</td>
+							</tr>
+							<tr>
+								<td>फ़ाइल पारस्परिक स्थानांतरण</td>
+								<td>आपको "फ़ाइल पारस्परिक स्थानांतरण" प्रदान करने के लिए, जिसके माध्यम से आप फ़ाइलों का क्रॉस-डिवाइस स्थानांतरण और प्रवाह प्राप्त कर सकते हैं, इसके लिए हम आपके डिवाइस पहचानकर्ता (डिवाइस आईडी), डिवाइस नाम, डिवाइस प्रकार, फ़ाइल जानकारी (फ़ाइल नाम और फ़ाइल सामग्री), फ़ाइल में निहित संपर्क जानकारी (नाम, जन्मदिन, व्यक्तिगत टेलीफोन नंबर, ईमेल पता, पता, पद और कार्य स्थान सहित), वाई-फाई नाम आदि एकत्र करेंगे।</td>
+								<td>डिवाइस जानकारी, फ़ाइल जानकारी, संपर्क जानकारी</td>
+								<td>सिस्टम संग्रह</td>
+								<td>डिवाइस पहचानकर्ता (डिवाइस आईडी), डिवाइस नाम, डिवाइस प्रकार, फ़ाइल जानकारी (फ़ाइल नाम और फ़ाइल सामग्री), फ़ाइल में निहित संपर्क जानकारी (नाम, जन्मदिन, व्यक्तिगत टेलीफोन नंबर, ईमेल पता, पता, पद और कार्य स्थान सहित), वाई-फाई नाम</td>
+							</tr>
+						</tbody>
+					</table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

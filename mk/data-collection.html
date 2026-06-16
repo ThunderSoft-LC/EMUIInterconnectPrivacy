@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Листа на собрани лични податоци</title>
+    <style>
+        table { border-collapse: collapse; margin: 20px auto; font-family: Arial, sans-serif; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: top; }
+        th { font-weight: bold; text-align: center; background-color: #f5f5f5; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .main { padding: 2rem 0; }
+        .content { background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 2px 20px rgba(0,0,0,0.1); max-width: 1000px; margin: 0 auto; }
+        h1 { font-size: 34px; font-weight: 600; color: black; margin-bottom: 0.5rem; line-height: 1.3; text-align: center; }
+        .update-date { color: #666; font-size: 14px; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee; text-align: center; }
+        .section { margin-bottom: 2rem; }
+        .section p { margin-bottom: 1rem; text-align: justify; color: #555; font-size: 16px; line-height: 1.8; }
+        .weight-bold { color: black; font-weight: 600; }
+        @media (max-width: 768px) { .content { padding: 2rem 1.5rem; margin: 0 1rem; } h1 { font-size: 24px; } .section p { font-size: 15px; } }
+        @media (max-width: 600px) { table { display: block; overflow-x: auto; white-space: nowrap; } th, td { min-width: 120px; } }
+        @media (max-width: 480px) { .container { padding: 0 15px; } .content { padding: 1.5rem 1rem; margin: 0 0.5rem; } h1 { font-size: 22px; } }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Листа на собрани лични податоци</h1>
+                <div class="section">
+                    <p><span class="weight-bold">ThunderSoft</span> (во продолжение „ние“) строго ќе ги почитува барањата на државните закони и регулативи, ќе ја вгради законитоста и усогласеноста во дизајнот на производите и деловните процеси, и ќе користи напредни безбедносни технологии во индустријата за да обезбеди безбедност на податоците. Истовремено, ние им даваме големо значење на заштитата на вашите лични податоци и приватност, посветени сме на одбрана на правата на приватност на секое лице, поради што се придржуваме до 5-те основни принципи на заштита на приватноста:
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Минимизирање на податоците: собираме само лични податоци неопходни за извршување на деловните функции, за да ги задоволиме вашите потреби.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Обработка на податоци на страната на уредот: се стремиме што е можно повеќе да ја завршиме обработката и анализата на личните податоци на уредот на корисникот.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Транспарентност и контрола: при собирање лични податоци, јасно и точно го информираме корисникот и осигуруваме дека корисникот знае како се користат податоците и како да се откаже.
+                    </p>
+                    <p><span class="weight-bold">●</span>&nbsp;&nbsp;Заштита на идентитетот: користиме технологии за зголемување на приватноста за да го скриеме идентитетот на корисникот кога податоците го напуштаат неговиот уред.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+                        <thead>
+                            <tr><th>Деловно сценарио</th><th>Цел на собирање</th><th>Тип на лични податоци</th><th>Начин на собирање</th><th>Полиња на лични податоци</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Откривање и поврзување на уреди</td><td>За да овозможиме меѓусебно поврзување на вашите уреди, може да го собираме вашиот единствен идентификатор на уредот, типот на уредот, моделот на уредот, името на уредот, Bluetooth адресата, Wi-Fi адресата, Wi-Fi SSID и IP адресата за да откриеме уреди во вашата околина што се достапни за спарување и поврзување, да воспоставиме комуникациски врски помеѓу уредите и да ви овозможиме проток на содржини и функционална соработка помеѓу уредите.</td><td>Информации за уредот</td><td>Системско собирање</td><td>Единствен идентификатор на уредот, тип на уредот, модел на уредот, име на уредот, Bluetooth адреса, Wi-Fi адреса, Wi-Fi SSID, IP адреса</td></tr>
+                            <tr><td>Заемен пренос на датотеки</td><td>Со цел да ви обезбедиме „Заемен пренос на датотеки“, преку кој можете да вршите пренос и проток на датотеки помеѓу уредите, за таа цел ќе го собираме вашиот идентификатор на уредот (ID на уред), името на уредот, типот на уредот, информацијата за датотеката (име на датотеката и содржина на датотеката), информациите за контакти содржани во датотеката (вклучувајќи име, датум на раѓање, личен телефонски број, адреса на е-пошта, адреса, позиција и работно место), името на Wi-Fi и друго.</td><td>Информации за уредот, информации за датотеката, информации за контакти</td><td>Системско собирање</td><td>Идентификатор на уредот (ID на уред), име на уредот, тип на уредот, информации за датотеката (име на датотеката и содржина на датотеката), информации за контакти содржани во датотеката (вклучувајќи име, датум на раѓање, личен телефонски број, адреса на е-пошта, адреса, позиција и работно место), име на Wi-Fi</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

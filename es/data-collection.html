@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de información personal recopilada</title>
+	<style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+			text-align: center;
+        }
+		/* Reinicio de estilos */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* Estilos de cabecera */
+		.header {
+			background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+			color: white;
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.header .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo-img {
+			height: 40px;
+			width: auto;
+		}
+
+		.nav ul {
+			display: flex;
+			list-style: none;
+			gap: 2rem;
+		}
+
+		.nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: opacity 0.3s;
+		}
+
+		.nav a:hover {
+			opacity: 0.8;
+		}
+
+		/* Estilos de contenido principal */
+		.main {
+			padding: 2rem 0;
+		}
+
+		.content {
+			background: white;
+			padding: 3rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 34px;
+			font-weight: 600;
+			color: black;
+			margin-bottom: 0.5rem;
+			line-height: 1.3;
+			text-align:center;
+		}
+
+		.update-date {
+			color: #666;
+			font-size: 14px;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #eee;
+			text-align:center;
+		}
+
+		.section {
+			margin-bottom: 2rem;
+		}
+
+		.section h2 {
+			font-size: 22px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.section h3 {
+			font-size: 18px;
+			font-weight: 600;
+			color: black;
+			margin: 1.5rem 0 1rem 0;
+		}
+
+		.section p {
+			margin-bottom: 1rem;
+			text-align: justify;
+			color: #555;
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		.section p:last-child {
+			margin-bottom: 0;
+		}
+		.weight-bold
+		{
+			color:black;
+			font-weight: 600;
+		}
+		.link
+		{
+			color:blue;
+			text-decoration: none;
+		}
+
+		/* Diseño responsivo */
+		@media (max-width: 768px) {
+			.header .container {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.nav ul {
+				flex-direction: column;
+				gap: 1rem;
+				text-align: center;
+			}
+
+			.content {
+				padding: 2rem 1.5rem;
+				margin: 0 1rem;
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+
+			.section h2 {
+				font-size: 20px;
+			}
+
+			.section p {
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.container {
+				padding: 0 15px;
+			}
+
+			.content {
+				padding: 1.5rem 1rem;
+				margin: 0 0.5rem;
+			}
+
+			h1 {
+				font-size: 22px;
+			}
+
+			.section h2 {
+				font-size: 18px;
+			}
+
+			.section h3 {
+				font-size: 16px;
+			}
+		}
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Lista de información personal recopilada</h1>
+				<p class="update-date"></p>
+				<div class="section">
+                    <p><span class="weight-bold">ThunderSoft</span> (en adelante, "nosotros") cumplirá estrictamente con los requisitos de las leyes y regulaciones nacionales, integrando la legalidad y el cumplimiento en el diseño de productos y los procesos comerciales, y adoptará tecnologías de seguridad avanzadas de la industria para garantizar la seguridad de los datos. Al mismo tiempo, concedemos gran importancia a la protección de su información personal y privacidad, y nos comprometemos a defender los derechos de privacidad de cada persona. Por ello, nos adherimos a 5 principios básicos de protección de la privacidad:
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Minimización de datos: Insistimos en recopilar solo los datos personales necesarios para realizar las funciones comerciales, a fin de servir a sus necesidades.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Procesamiento de datos en el dispositivo: Insistimos en completar el procesamiento y análisis de datos personales en el dispositivo del usuario siempre que sea posible.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Transparencia y controlabilidad: Al recopilar datos personales, informamos al usuario de manera clara y precisa, y nos aseguramos de que el usuario sepa cómo se utilizan los datos y cómo darse de baja.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Protección de identidad: Utilizamos tecnologías de mejora de la privacidad para ocultar la identidad del usuario cuando los datos abandonan el dispositivo del usuario.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+						<tbody>
+							<th>Escenario de negocio</th>
+							<th>Propósito de la recopilación</th>
+							<th>Tipo de información personal</th>
+							<th>Forma de recopilación</th>
+							<th>Campos de información personal</th>
+							<tr>
+								<td>Descubrimiento y conexión de dispositivos</th>
+								<td>Para permitir la interconexión entre sus dispositivos, podemos recopilar su identificador único del dispositivo, tipo de dispositivo, modelo de dispositivo, nombre de dispositivo, dirección Bluetooth, dirección Wi-Fi, SSID de Wi-Fi y dirección IP para descubrir dispositivos cercanos disponibles para emparejamiento y conexión, establecer enlaces de comunicación entre dispositivos, y lograr para usted la transferencia de contenido y la sinergia de funciones entre dispositivos.</th>
+								<td>Información del dispositivo</th>
+								<td>Recopilación del sistema</th>
+								<td>Identificador único del dispositivo, tipo de dispositivo, modelo de dispositivo, nombre de dispositivo, dirección Bluetooth, dirección Wi-Fi, SSID de Wi-Fi y dirección IP</th>
+							</tr>
+							<tr>
+								<td>Transferencia de archivos</th>
+								<td>Para proporcionarle la "Transferencia de archivos", a través de la cual puede realizar la transferencia de archivos entre dispositivos. Para ello, recopilaremos su identificador de dispositivo (ID del dispositivo), nombre del dispositivo, tipo de dispositivo, información del archivo (nombre del archivo y contenido del archivo), información de contactos contenida en el archivo (incluyendo nombre, fecha de nacimiento, número de teléfono personal, dirección de correo electrónico, dirección, cargo y unidad de trabajo), nombre de Wi‑Fi, etc.</th>
+								<td>Información del dispositivo, información del archivo, información de contactos</th>
+								<td>Recopilación del sistema</th>
+								<td>Identificador del dispositivo (ID del dispositivo), nombre del dispositivo, tipo de dispositivo, información del archivo (nombre del archivo y contenido del archivo), información de contactos contenida en el archivo (incluyendo nombre, fecha de nacimiento, número de teléfono personal, dirección de correo electrónico, dirección, cargo y unidad de trabajo), nombre de Wi‑Fi</th>
+							</tr>
+						</tbody>
+					</table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spisak prikupljenih ličnih podataka</title>
+	<style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            font-weight: bold;
+			text-align: center;
+        }
+		/* Reset stilova */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* Stilovi zaglavlja */
+		.header {
+			background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+			color: white;
+			padding: 1rem 0;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		.header .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo-img {
+			height: 40px;
+			width: auto;
+		}
+
+		.nav ul {
+			display: flex;
+			list-style: none;
+			gap: 2rem;
+		}
+
+		.nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: opacity 0.3s;
+		}
+
+		.nav a:hover {
+			opacity: 0.8;
+		}
+
+		/* Stilovi glavnog sadržaja */
+		.main {
+			padding: 2rem 0;
+		}
+
+		.content {
+			background: white;
+			padding: 3rem;
+			border-radius: 8px;
+			box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		h1 {
+			font-size: 34px;
+			font-weight: 600;
+			color: black;
+			margin-bottom: 0.5rem;
+			line-height: 1.3;
+			text-align:center;
+		}
+
+		.update-date {
+			color: #666;
+			font-size: 14px;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #eee;
+			text-align:center;
+		}
+
+		.section {
+			margin-bottom: 2rem;
+		}
+
+		.section h2 {
+			font-size: 22px;
+			font-weight: 600;
+			color: #333;
+			margin-bottom: 1rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.section h3 {
+			font-size: 18px;
+			font-weight: 600;
+			color: black;
+			margin: 1.5rem 0 1rem 0;
+		}
+
+		.section p {
+			margin-bottom: 1rem;
+			text-align: justify;
+			color: #555;
+			font-size: 16px;
+			line-height: 1.8;
+		}
+
+		.section p:last-child {
+			margin-bottom: 0;
+		}
+		.weight-bold
+		{
+			color:black;
+			font-weight: 600;
+		}
+		.link
+		{
+			color:blue;
+			text-decoration: none;
+		}
+
+		/* Responsivni dizajn */
+		@media (max-width: 768px) {
+			.header .container {
+				flex-direction: column;
+				gap: 1rem;
+			}
+
+			.nav ul {
+				flex-direction: column;
+				gap: 1rem;
+				text-align: center;
+			}
+
+			.content {
+				padding: 2rem 1.5rem;
+				margin: 0 1rem;
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+
+			.section h2 {
+				font-size: 20px;
+			}
+
+			.section p {
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.container {
+				padding: 0 15px;
+			}
+
+			.content {
+				padding: 1.5rem 1rem;
+				margin: 0 0.5rem;
+			}
+
+			h1 {
+				font-size: 22px;
+			}
+
+			.section h2 {
+				font-size: 18px;
+			}
+
+			.section h3 {
+				font-size: 16px;
+			}
+		}
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <h1>Spisak prikupljenih ličnih podataka</h1>
+				<p class="update-date"></p>
+				<div class="section">
+                    <p><span class="weight-bold">ThunderSoft</span> (u daljem tekstu "mi") će se strogo pridržavati zahtjeva državnih zakona i propisa, ugrađujući zakonitost i usklađenost u dizajn proizvoda i poslovne procese, te koristiti napredne industrijske sigurnosne tehnologije kako bi osigurala sigurnost podataka. Istovremeno, veoma cijenimo zaštitu vaših ličnih podataka i privatnosti, posvećeni smo odbrani prava na privatnost svake osobe, te se iz tog razloga pridržavamo 5 osnovnih principa zaštite privatnosti:
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Minimizacija podataka: Insistiramo na prikupljanju samo onih ličnih podataka koji su neophodni za realizaciju poslovnih funkcija, kako bismo služili vašim potrebama.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Obrada podataka na uređaju: Insistiramo da se obrada i analiza ličnih podataka obavlja na korisnikovom uređaju kad god je to moguće.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Transparentnost i kontrolabilnost: Prilikom prikupljanja ličnih podataka, jasno i precizno obavještavamo korisnika i osiguravamo da korisnik zna kako se podaci koriste i kako se odjaviti.
+                    </p>
+					<p><span class="weight-bold">●</span>&nbsp;&nbsp;Zaštita identiteta: Koristimo tehnologije za poboljšanje privatnosti kako bismo sakrili identitet korisnika kada podaci napuste korisnikov uređaj.
+                    </p>
+                </div>
+                <div class="section">
+                    <table>
+						<tbody>
+							<th>Poslovni scenarij</th>
+							<th>Svrha prikupljanja</th>
+							<th>Tip ličnih podataka</th>
+							<th>Način prikupljanja</th>
+							<th>Polja ličnih podataka</th>
+							<tr>
+								<td>Otkrivanje i povezivanje uređaja</th>
+								<td>Kako bi se omogućila međusobna povezanost vaših uređaja, možemo prikupiti vaš jedinstveni identifikator uređaja, tip uređaja, model uređaja, ime uređaja, Bluetooth adresu, Wi-Fi adresu, Wi-Fi SSID i IP adresu kako bismo otkrili uređaje u vašoj blizini koji su dostupni za uparivanje i povezivanje, uspostavili komunikacijske veze između uređaja i omogućili vam protok sadržaja i sinhronizaciju funkcija između uređaja.</th>
+								<td>Informacije o uređaju</th>
+								<td>Sistemsko prikupljanje</th>
+								<td>Jedinstveni identifikator uređaja, tip uređaja, model uređaja, ime uređaja, Bluetooth adresa, Wi-Fi adresa, Wi-Fi SSID i IP adresa</th>
+							</tr>
+							<tr>
+								<td>Prijenos datoteka</th>
+								<td>Kako bismo vam pružili "Prijenos datoteka", putem kojeg možete ostvariti prijenos datoteka između uređaja. U tu svrhu prikupit ćemo vaš identifikator uređaja (ID uređaja), ime uređaja, tip uređaja, informacije o datoteci (naziv datoteke i sadržaj datoteke), informacije o kontaktima sadržane u datoteci (uključujući ime, datum rođenja, lični broj telefona, e-mail adresu, adresu, poziciju i radnu jedinicu), Wi-Fi naziv itd.</th>
+								<td>Informacije o uređaju, informacije o datoteci, informacije o kontaktima</th>
+								<td>Sistemsko prikupljanje</th>
+								<td>Identifikator uređaja (ID uređaja), ime uređaja, tip uređaja, informacije o datoteci (naziv datoteke i sadržaj datoteke), informacije o kontaktima sadržane u datoteci (uključujući ime, datum rođenja, lični broj telefona, e-mail adresu, adresu, poziciju i radnu jedinicu), Wi-Fi naziv</th>
+							</tr>
+						</tbody>
+					</table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
